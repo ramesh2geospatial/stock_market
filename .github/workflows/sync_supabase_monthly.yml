@@ -1,0 +1,64 @@
+name: Monthly Supabase Data Synchronization
+
+on:
+  schedule:
+    # Runs at 02:00 UTC on the 11th of every month (following AMFI monthly portfolio disclosure deadline)
+    - cron: '0 2 11 * *'
+  workflow_dispatch:
+    inputs:
+      force_full_sync:
+        description: 'Force full sync of all 755 stocks and MF holdings'
+        required: false
+        default: 'true'
+        type: boolean
+
+jobs:
+  sync-market-data:
+    name: Sync Index Stocks & Real MF Disclosures to Supabase Cloud
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Verify SQLite Local Schema & Baseline Seed
+        run: |
+          python -c "
+          from providers.mf_holdings_provider import MFHoldingsProvider
+          p = MFHoldingsProvider()
+          print('SQLite baseline schema verified!')
+          "
+
+      - name: Sync 755 Index Stocks to Supabase Cloud
+        run: |
+          python scripts/sync_all_stocks_to_supabase.py
+
+      - name: Sync Real AMFI Monthly Holdings Disclosures
+        run: |
+          python scripts/sync_real_mf_holdings.py
+
+      - name: Audit Live Cloud Database & Consistency
+        run: |
+          python scripts/audit_supabase_data.py
+
+      - name: Run Schema Regression Tests
+        run: |
+          pytest tests/test_supabase_schema.py tests/test_stock_search_api.py -v

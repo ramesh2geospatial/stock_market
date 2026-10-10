@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PromptFusionMatrix",
+  "type": "object",
+  "properties": {
+    "ticker": { "type": "string" },
+    "company_name": { "type": "string" },
+    "quantitative_base": {
+      "type": "object",
+      "properties": {
+        "rev_growth_yoy": { "type": "number" },
+        "ebitda_margin": { "type": "number" },
+        "cfo_pat_ratio": { "type": "number" },
+        "debt_to_ebitda": { "type": "number" }
+      }
+    },
+    "future_opportunities": {
+      "type": "object",
+      "properties": {
+        "order_book": { "type": "string" },
+        "ev_capacity_expansion": { "type": "string" },
+        "target_capex_completion": { "type": "string" }
+      }
+    },
+    "macro_themes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "governance_audit": {
+      "type": "object",
+      "properties": {
+        "promoter_pledging": { "type": "number" },
+        "auditor_flags": { "type": "boolean" },
+        "rpt_risk": { "type": "string" }
+      }
+    },
+    "deal_flow": {
+      "type": "object",
+      "properties": {
+        "recent_disclosures": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "competitive_landscape": {
+      "type": "object",
+      "properties": {
+        "peer_rank": { "type": "integer" },
+        "market_share_trend": { "type": "string" }
+      }
+    },
+    "regulatory_environment": {
+      "type": "object",
+      "properties": {
+        "policy_bias": { "type": "string" }
+      }
+    }
+  },
+  "required": ["ticker", "company_name", "quantitative_base", "future_opportunities", "macro_themes", "governance_audit"]
+}

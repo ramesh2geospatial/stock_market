@@ -1,0 +1,38 @@
+{
+  "symbol": "TVSMOTOR.NS",
+  "company_name": "TVS Motor Company Limited",
+  "analysis_date": "2026-07-06",
+  "trajectory_score": 86.5,
+  "stance": "Bullish / Strong Outperform",
+  "horizon_months": 12,
+  "scenarios": {
+    "bull_case": {
+      "target_price": 2850.0,
+      "upside_pct": 24.5,
+      "catalyst": "Rapid iQube & EV 2W market share gain + LATAM export recovery."
+    },
+    "base_case": {
+      "target_price": 2520.0,
+      "upside_pct": 10.1,
+      "catalyst": "Steady 15% YoY domestic volume growth with stable 12% EBITDA margin."
+    },
+    "bear_case": {
+      "target_price": 2050.0,
+      "downside_pct": -10.4,
+      "catalyst": "Raw material cost inflation + price discounting from entry-level peers."
+    }
+  },
+  "signal_breakdown": {
+    "quant_fundamentals_score": 82.0,
+    "future_opportunities_score": 90.0,
+    "macro_theme_score": 95.0,
+    "governance_score": 98.0,
+    "deal_flow_score": 85.0,
+    "competitive_position_score": 88.0
+  },
+  "governance_red_flags": [],
+  "key_catalysts": [
+    "EV 2W market leadership (June 2026 registrations at 46,999 units).",
+    "Upcoming BMW strategic EV platform export launch."
+  ]
+}

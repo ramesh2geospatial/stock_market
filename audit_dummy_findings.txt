@@ -1,0 +1,132 @@
+.\app.py:1965: sample_universe = ["TVSMOTOR.NS", "BAJAJ-AUTO.NS", "HEROMOTOCO.NS", "RELIANCE.NS", "INFY.NS", "TCS.NS"]
+.\app.py:1966: batch_res = analyzer.batch_predict_universe(sample_universe)
+.\app.py:2008: mf_query = st.text_input("🔎 Search Stock by Symbol, Name, or Sector:", value="", placeholder="e.g. Reliance, HDFC, Polycab, BSE, Senco...", key="mf_search_q")
+.\.agents\challenger_m2_1\stress_test_m2.py:10: from unittest.mock import MagicMock, patch
+.\.agents\challenger_m2_1\stress_test_m2.py:34: """Test tickers not present in hardcoded 50-stock mapping."""
+.\.agents\challenger_m2_1\stress_test_m2.py:58: def test_fetch_announcements_network_timeout(self, mock_get):
+.\.agents\challenger_m2_1\stress_test_m2.py:60: mock_get.side_effect = requests.exceptions.Timeout("Connection timed out")
+.\.agents\challenger_m2_1\stress_test_m2.py:65: def test_fetch_announcements_http_500_error(self, mock_get):
+.\.agents\challenger_m2_1\stress_test_m2.py:67: mock_resp = MagicMock()
+.\.agents\challenger_m2_1\stress_test_m2.py:68: mock_resp.raise_for_status.side_effect = requests.exceptions.HTTPError("500 Server Error")
+.\.agents\challenger_m2_1\stress_test_m2.py:69: mock_get.return_value = mock_resp
+.\.agents\challenger_m2_1\stress_test_m2.py:74: def test_fetch_announcements_connection_refused(self, mock_get):
+.\.agents\challenger_m2_1\stress_test_m2.py:76: mock_get.side_effect = requests.exceptions.ConnectionError("Connection refused")
+.\.agents\challenger_m2_1\stress_test_m2.py:85: def test_fetch_announcements_html_returned_instead_of_json(self, mock_get):
+.\.agents\challenger_m2_1\stress_test_m2.py:87: mock_resp = MagicMock()
+.\.agents\challenger_m2_1\stress_test_m2.py:88: mock_resp.status_code = 200
+.\.agents\challenger_m2_1\stress_test_m2.py:89: mock_resp.json.side_effect = requests.exceptions.JSONDecodeError("Expecting value", "<html>", 0)
+.\.agents\challenger_m2_1\stress_test_m2.py:90: mock_get.return_value = mock_resp
+.\.agents\challenger_m2_1\stress_test_m2.py:95: def test_fetch_announcements_malformed_dict_structure(self, mock_get):
+.\.agents\challenger_m2_1\stress_test_m2.py:97: mock_resp = MagicMock()
+.\.agents\challenger_m2_1\stress_test_m2.py:98: mock_resp.status_code = 200
+.\.agents\challenger_m2_1\stress_test_m2.py:99: mock_resp.json.return_value = {"Table": "Server maintenance error text"}
+.\.agents\challenger_m2_1\stress_test_m2.py:100: mock_get.return_value = mock_resp
+.\.agents\challenger_m2_1\stress_test_m2.py:105: def test_fetch_documents_crash_on_malformed_table_string(self, mock_fetch_ann):
+.\.agents\challenger_m2_1\stress_test_m2.py:107: mock_fetch_ann.return_value = "Server maintenance error text"
+.\.agents\challenger_m2_1\stress_test_m2.py:115: def test_fetch_documents_crash_on_list_of_ints(self, mock_fetch_ann):
+.\.agents\challenger_m2_1\stress_test_m2.py:117: mock_fetch_ann.return_value = [123, 456]
+.\.agents\challenger_m2_1\stress_test_m2.py:129: def test_fetch_documents_missing_headline_and_attachment(self, mock_fetch_ann):
+.\.agents\challenger_m2_1\stress_test_m2.py:131: mock_fetch_ann.return_value = [
+.\.agents\challenger_m2_1\stress_test_m2.py:178: self.fetcher.bse.fetch_documents = MagicMock(side_effect=RuntimeError("BSE Provider crash"))
+.\.agents\challenger_m2_1\stress_test_m2.py:180: self.fetcher.screener.fetch_documents = MagicMock(return_value=[screener_doc])
+.\.agents\challenger_m2_1\stress_test_m2.py:181: self.fetcher.nse.fetch_documents = MagicMock(return_value=[])
+.\.agents\challenger_m2_1\stress_test_m2.py:189: self.fetcher.bse.fetch_documents = MagicMock(side_effect=RuntimeError("BSE crash"))
+.\.agents\challenger_m2_1\stress_test_m2.py:190: self.fetcher.screener.fetch_documents = MagicMock(side_effect=RuntimeError("Screener crash"))
+.\.agents\challenger_m2_1\stress_test_m2.py:192: self.fetcher.nse.fetch_documents = MagicMock(return_value=[nse_doc])
+.\.agents\challenger_m2_1\stress_test_m2.py:200: self.fetcher.bse.fetch_documents = MagicMock(side_effect=RuntimeError("BSE crash"))
+.\.agents\challenger_m2_1\stress_test_m2.py:201: self.fetcher.screener.fetch_documents = MagicMock(side_effect=RuntimeError("Screener crash"))
+.\.agents\challenger_m2_1\stress_test_m2.py:202: self.fetcher.nse.fetch_documents = MagicMock(side_effect=RuntimeError("NSE crash"))
+.\.agents\challenger_m2_1\stress_test_m2.py:211: self.fetcher.screener.fetch_documents = MagicMock(return_value=[screener_doc])
+.\.agents\challenger_m2_1\stress_test_m2.py:236: self.fetcher.bse.fetch_documents = MagicMock(return_value=[bse_fin_doc])
+.\.agents\challenger_m2_1\stress_test_m2.py:244: self.fetcher.screener.fetch_documents = MagicMock(return_value=[screener_transcript_doc])
+.\.agents\challenger_m2_1\stress_test_m2.py:259: def test_download_and_store_http_404(self, mock_get):
+.\.agents\challenger_m2_1\stress_test_m2.py:261: mock_resp = MagicMock()
+.\.agents\challenger_m2_1\stress_test_m2.py:262: mock_resp.raise_for_status.side_effect = requests.exceptions.HTTPError("404 Not Found")
+.\.agents\challenger_m2_1\stress_test_m2.py:263: mock_get.return_value = mock_resp
+.\.agents\challenger_m2_1\stress_test_m2.py:278: def test_download_and_store_empty_content(self, mock_get):
+.\.agents\challenger_m2_1\stress_test_m2.py:280: mock_resp = MagicMock()
+.\.agents\challenger_m2_1\stress_test_m2.py:281: mock_resp.status_code = 200
+.\.agents\challenger_m2_1\stress_test_m2.py:282: mock_resp.content = b""
+.\.agents\challenger_m2_1\stress_test_m2.py:283: mock_get.return_value = mock_resp
+.\.agents\challenger_m2_2\empirical_test_m2.py:11: from unittest.mock import MagicMock, patch
+.\.agents\challenger_m2_2\empirical_test_m2.py:115: def test_local_file_caching_and_sqlite(self, mock_get):
+.\.agents\challenger_m2_2\empirical_test_m2.py:117: pdf_bytes = b"%PDF-1.4 Mock PDF Document Content"
+.\.agents\challenger_m2_2\empirical_test_m2.py:118: mock_resp = MagicMock()
+.\.agents\challenger_m2_2\empirical_test_m2.py:119: mock_resp.status_code = 200
+.\.agents\challenger_m2_2\empirical_test_m2.py:120: mock_resp.content = pdf_bytes
+.\.agents\challenger_m2_2\empirical_test_m2.py:121: mock_get.return_value = mock_resp
+.\.agents\challenger_m2_2\empirical_test_m2.py:166: self.fetcher.bse.fetch_documents = MagicMock()
+.\.agents\challenger_m2_2\empirical_test_m2.py:178: def test_edge_case_http_error_404(self, mock_get):
+.\.agents\challenger_m2_2\empirical_test_m2.py:180: mock_resp = MagicMock()
+.\.agents\challenger_m2_2\empirical_test_m2.py:181: mock_resp.status_code = 404
+.\.agents\challenger_m2_2\empirical_test_m2.py:182: mock_resp.raise_for_status.side_effect = Exception("404 Client Error: Not Found")
+.\.agents\challenger_m2_2\empirical_test_m2.py:183: mock_get.return_value = mock_resp
+.\.agents\challenger_m2_2\empirical_test_m2.py:198: def test_edge_case_corrupted_pdf_header(self, mock_get):
+.\.agents\challenger_m2_2\empirical_test_m2.py:204: mock_resp = MagicMock()
+.\.agents\challenger_m2_2\empirical_test_m2.py:205: mock_resp.status_code = 200
+.\.agents\challenger_m2_2\empirical_test_m2.py:206: mock_resp.content = html_error
+.\.agents\challenger_m2_2\empirical_test_m2.py:207: mock_get.return_value = mock_resp
+.\.agents\challenger_m2_recheck\stress_test_m2.py:3: Tests all 6 remediated edge cases against real/mocked inputs.
+.\.agents\challenger_m2_recheck\stress_test_m2.py:10: from unittest.mock import MagicMock, patch
+.\.agents\challenger_m2_recheck\stress_test_m2.py:75: def test_fix2_pdf_magic_bytes_validation_and_soft404(self, mock_get):
+.\.agents\challenger_m2_recheck\stress_test_m2.py:88: mock_resp_html = MagicMock()
+.\.agents\challenger_m2_recheck\stress_test_m2.py:89: mock_resp_html.status_code = 200
+.\.agents\challenger_m2_recheck\stress_test_m2.py:90: mock_resp_html.content = b"<html><head><title>404 Not Found</title></head><body>File not found</body></html>"
+.\.agents\challenger_m2_recheck\stress_test_m2.py:91: mock_resp_html.raise_for_status.return_value = None
+.\.agents\challenger_m2_recheck\stress_test_m2.py:92: mock_get.return_value = mock_resp_html
+.\.agents\challenger_m2_recheck\stress_test_m2.py:108: mock_resp_pdf = MagicMock()
+.\.agents\challenger_m2_recheck\stress_test_m2.py:109: mock_resp_pdf.status_code = 200
+.\.agents\challenger_m2_recheck\stress_test_m2.py:110: mock_resp_pdf.content = b"%PDF-1.4\n1 0 obj\n<< /Title (Test) >>\nendobj\n%%EOF"
+.\.agents\challenger_m2_recheck\stress_test_m2.py:111: mock_resp_pdf.raise_for_status.return_value = None
+.\.agents\challenger_m2_recheck\stress_test_m2.py:112: mock_get.return_value = mock_resp_pdf
+.\.agents\challenger_m2_recheck\stress_test_m2.py:123: mock_bse = MagicMock()
+.\.agents\challenger_m2_recheck\stress_test_m2.py:124: mock_screener = MagicMock()
+.\.agents\challenger_m2_recheck\stress_test_m2.py:125: mock_nse = MagicMock()
+.\.agents\challenger_m2_recheck\stress_test_m2.py:131: fetcher.bse = mock_bse
+.\.agents\challenger_m2_recheck\stress_test_m2.py:132: fetcher.screener = mock_screener
+.\.agents\challenger_m2_recheck\stress_test_m2.py:133: fetcher.nse = mock_nse
+.\.agents\challenger_m2_recheck\stress_test_m2.py:136: mock_bse.fetch_documents.return_value = [
+.\.agents\challenger_m2_recheck\stress_test_m2.py:141: mock_screener.fetch_documents.return_value = [
+.\.agents\challenger_m2_recheck\stress_test_m2.py:146: mock_nse.fetch_documents.return_value = [
+.\.agents\challenger_m2_recheck\stress_test_m2.py:152: self.assertTrue(mock_bse.fetch_documents.called)
+.\.agents\challenger_m2_recheck\stress_test_m2.py:153: self.assertTrue(mock_screener.fetch_documents.called, "Tier 2 Screener should be called when transcript/presentation are missing from Tier 1")
+.\.agents\challenger_m2_recheck\stress_test_m2.py:154: self.assertTrue(mock_nse.fetch_documents.called, "Tier 3 NSE should be called when presentation is still missing from Tier 1 + Tier 2")
+.\.agents\challenger_m2_recheck\stress_test_m2.py:165: def test_fix4_screener_scrip_code_fallback_on_404(self, mock_scrip_code, mock_get):
+.\.agents\challenger_m2_recheck\stress_test_m2.py:166: mock_scrip_code.return_value = "500570"
+.\.agents\challenger_m2_recheck\stress_test_m2.py:170: resp_404 = MagicMock()
+.\.agents\challenger_m2_recheck\stress_test_m2.py:174: resp_200 = MagicMock()
+.\.agents\challenger_m2_recheck\stress_test_m2.py:187: mock_get.side_effect = [resp_404, resp_200]
+.\.agents\challenger_m2_recheck\stress_test_m2.py:190: self.assertEqual(mock_get.call_count, 2)
+.\.agents\challenger_m2_recheck\stress_test_m2.py:191: called_urls = [call.args[0] for call in mock_get.call_args_list]
+.\.agents\challenger_m2_recheck\stress_test_m2.py:203: bse.fetch_announcements = MagicMock(return_value="500 Internal Server Error String")
+.\.agents\challenger_m2_recheck\stress_test_m2.py:208: bse.fetch_announcements = MagicMock(return_value={"error": "Access Denied"})
+.\.agents\challenger_m2_recheck\stress_test_m2.py:213: bse.fetch_announcements = MagicMock(return_value=[
+.\.agents\challenger_m3_1\stress_test_m3.py:13: def create_mock_pdf_with_text(text_content: str) -> bytes:
+.\analyzers\backtest_engine.py:3: Simulates historical 10-signal predictions across past 4 quarters (Q-1, Q-2, Q-3, Q-4)
+.\analyzers\backtest_engine.py:22: Simulate 4-quarter historical backtest for a given stock.
+.\backend_pipeline\etl\amc_holdings_scraper.py:15: SAMPLE_SCHEME_HOLDINGS = {
+.\backend_pipeline\etl\amc_holdings_scraper.py:63: return SAMPLE_SCHEME_HOLDINGS.get(scheme_code, {
+.\backend_pipeline\etl\amc_holdings_scraper.py:72: fund_a = SAMPLE_SCHEME_HOLDINGS.get(scheme_code_a)
+.\backend_pipeline\etl\amc_holdings_scraper.py:73: fund_b = SAMPLE_SCHEME_HOLDINGS.get(scheme_code_b)
+.\backend_pipeline\etl\amc_holdings_scraper.py:120: scheme_data = SAMPLE_SCHEME_HOLDINGS.get(code)
+.\backend_pipeline\etl\mf_buying_selling_engine.py:10: SAMPLE_SCHEME_MOM_DIFFS = {
+.\backend_pipeline\etl\mf_buying_selling_engine.py:112: for scheme_code, data in SAMPLE_SCHEME_MOM_DIFFS.items():
+.\backend_pipeline\etl\mf_buying_selling_engine.py:128: for scheme_code, data in SAMPLE_SCHEME_MOM_DIFFS.items():
+.\backend_pipeline\etl\mf_buying_selling_engine.py:142: return SAMPLE_SCHEME_MOM_DIFFS.get(scheme_code, {
+.\backend_pipeline\etl\mf_buying_selling_engine.py:154: for code, data in SAMPLE_SCHEME_MOM_DIFFS.items():
+.\mobile_app\lib\main.dart:669: MarketCapStock(stockName: 'Dummy Inox Green Ltd.', isin: 'INE476865', ticker: 'DUMMYINXGN', indexName: 'Nifty Microcap 250', marketCapRank: 558, marketCapCr: 0.0, sector: 'Construction', totalMfHoldingPct: 12.5, holdingSchemesCount: 15, momNetSharesChange: '+150,000', actionTag: 'FRESH_ENTRY', mfHoldings: [SchemeStockHolding(schemeName: 'SBI Bluechip Fund', amc: 'SBI MF', sharesHeld: '2,500,000', valueCr: 250.0, weightPct: 3.5, action: 'STAKE_INCREASE')]),
+.\mobile_app\lib\main.dart:670: MarketCapStock(stockName: 'Dummy Triveni Ltd.', isin: 'INE704858', ticker: 'DUMMYTRVN', indexName: 'Nifty Microcap 250', marketCapRank: 559, marketCapCr: 0.0, sector: 'Capital Goods', totalMfHoldingPct: 12.5, holdingSchemesCount: 15, momNetSharesChange: '+150,000', actionTag: 'FRESH_ENTRY', mfHoldings: [SchemeStockHolding(schemeName: 'SBI Bluechip Fund', amc: 'SBI MF', sharesHeld: '2,500,000', valueCr: 250.0, weightPct: 3.5, action: 'STAKE_INCREASE')]),
+.\providers\calendar_provider.py:19: mock_calendar = [
+.\providers\calendar_provider.py:27: df = pd.DataFrame(mock_calendar)
+.\providers\mf_holdings_provider.py:65: sample_schemes = [
+.\providers\mf_holdings_provider.py:72: sample_schemes
+.\providers\mf_holdings_provider.py:76: sample_holdings = [
+.\providers\mf_holdings_provider.py:83: sample_holdings
+.\providers\vahan_provider.py:133: Simulates checking the live Vahan dashboard website connection.
+.\scripts\ams.py:792: placeholders = ",".join("?" for _ in candidate_ids)
+.\scripts\ams.py:796: WHERE id IN ({placeholders});
+.\scripts\compare_hdfc_sources.py:168: """Extract hardcoded / default fallback metrics in Flutter app and Streamlit dashboard."""
+.\scripts\update_android_assets_index_html.py:805: <input type="text" id="searchInput" oninput="renderStockSearch(this.value)" placeholder="Search Stock (e.g. Reliance, HDFC, Polycab, BSE, Senco)" style="width:100%; padding:14px; border-radius:12px; border:1px solid var(--card-border); background:var(--card-solid); color:white; font-weight:600; font-size:14px; margin-bottom:16px;">
+.\scripts\update_android_assets_index_html.py:1092: <input type="text" class="search-input" value="${(modalSchemeSearch || '').replace(/"/g, '&quot;')}" oninput="setModalSearch(this.value)" placeholder="Search scheme or AMC (e.g. SBI, HDFC)...">
+.\storage\sqlite_store.py:1209: placeholders = ",".join(["?"] * len(action_types))
+.\storage\sqlite_store.py:1210: query += f" AND h.action_type IN ({placeholders})"

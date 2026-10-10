@@ -1,0 +1,13 @@
+yfinance>=0.2.30
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+pandas>=2.0.0
+lxml>=4.9.0
+streamlit>=1.30.0
+plotly>=5.18.0
+duckdb>=0.9.0
+pypdf>=4.0.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+google-genai>=2.0.0
+nselib>=0.2.1

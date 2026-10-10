@@ -1,0 +1,595 @@
+{
+  "supabase": {
+    "index_stocks": [
+      {
+        "symbol": "HDFCBANK.NS",
+        "company_name": "HDFC Bank Ltd.",
+        "isin": null,
+        "index_name": "Nifty 50",
+        "market_cap_tier": "LARGE_CAP",
+        "market_cap_cr": 1250000.0,
+        "sector": "Financial Services",
+        "updated_at": "2026-08-13T15:09:45.944417+00:00"
+      }
+    ],
+    "mf_holdings": [
+      {
+        "id": 155,
+        "scheme_id": 3108,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 361074000,
+        "market_value_cr": 54161.1,
+        "portfolio_weight_pct": 4.84,
+        "mom_share_change": 41777119,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:21:34.843408+00:00",
+        "mf_schemes": {
+          "aum_cr": 243724.9,
+          "amc_name": "ICICI Prudential MF",
+          "category": "Large Cap",
+          "scheme_id": 3108,
+          "created_at": "2026-08-14T07:21:34.226256+00:00",
+          "scheme_name": "Icici Prudential Large Cap Fund"
+        }
+      },
+      {
+        "id": 154,
+        "scheme_id": 1266,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 355851333,
+        "market_value_cr": 53377.7,
+        "portfolio_weight_pct": 4.77,
+        "mom_share_change": 7460199,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:21:32.386062+00:00",
+        "mf_schemes": {
+          "aum_cr": 546919.7,
+          "amc_name": "LIC of India",
+          "category": "Institutional / Sovereign",
+          "scheme_id": 1266,
+          "created_at": "2026-08-14T07:21:18.646812+00:00",
+          "scheme_name": "Life Insurance Corporation of India"
+        }
+      },
+      {
+        "id": 158,
+        "scheme_id": 3111,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 233504000,
+        "market_value_cr": 35025.6,
+        "portfolio_weight_pct": 3.13,
+        "mom_share_change": 34316920,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:21:37.14627+00:00",
+        "mf_schemes": {
+          "aum_cr": 157615.2,
+          "amc_name": "ICICI Prudential MF",
+          "category": "Equity",
+          "scheme_id": 3111,
+          "created_at": "2026-08-14T07:21:36.777461+00:00",
+          "scheme_name": "Icici Prudential Value Discovery Fund"
+        }
+      },
+      {
+        "id": 157,
+        "scheme_id": 3110,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 227536000,
+        "market_value_cr": 34130.4,
+        "portfolio_weight_pct": 3.05,
+        "mom_share_change": 5222139,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:21:36.47482+00:00",
+        "mf_schemes": {
+          "aum_cr": 153586.8,
+          "amc_name": "HDFC Mutual Fund",
+          "category": "Flexi Cap",
+          "scheme_id": 3110,
+          "created_at": "2026-08-14T07:21:35.98595+00:00",
+          "scheme_name": "Hdfc Trustee Company Limited-Hdfc Flexi Cap Fund"
+        }
+      },
+      {
+        "id": 162,
+        "scheme_id": 3115,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 225298000,
+        "market_value_cr": 33794.7,
+        "portfolio_weight_pct": 3.02,
+        "mom_share_change": 18650500,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:21:39.417342+00:00",
+        "mf_schemes": {
+          "aum_cr": 152076.1,
+          "amc_name": "HDFC Mutual Fund",
+          "category": "Institutional / Sovereign",
+          "scheme_id": 3115,
+          "created_at": "2026-08-14T07:21:39.137296+00:00",
+          "scheme_name": "Nps Trust- A/C Hdfc Pension Fund Management Limited Scheme E - Tier I"
+        }
+      },
+      {
+        "id": 163,
+        "scheme_id": 3116,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 218584000,
+        "market_value_cr": 32787.6,
+        "portfolio_weight_pct": 2.93,
+        "mom_share_change": 32078860,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:21:39.981781+00:00",
+        "mf_schemes": {
+          "aum_cr": 147544.2,
+          "amc_name": "Nippon India MF",
+          "category": "Index / ETF",
+          "scheme_id": 3116,
+          "created_at": "2026-08-14T07:21:39.698852+00:00",
+          "scheme_name": "Nippon Life India Trustee Ltd-A/C Nippon India Etf Nifty 50 Bees"
+        }
+      },
+      {
+        "id": 159,
+        "scheme_id": 3112,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 193965333,
+        "market_value_cr": 29094.8,
+        "portfolio_weight_pct": 2.6,
+        "mom_share_change": 32078860,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:21:37.722261+00:00",
+        "mf_schemes": {
+          "aum_cr": 130926.6,
+          "amc_name": "HDFC Mutual Fund",
+          "category": "Equity",
+          "scheme_id": 3112,
+          "created_at": "2026-08-14T07:21:37.445491+00:00",
+          "scheme_name": "Hdfc Trustee Company Ltd. A/C Hdfc Balanced Advantage Fund"
+        }
+      },
+      {
+        "id": 161,
+        "scheme_id": 3114,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 153680000,
+        "market_value_cr": 23052.0,
+        "portfolio_weight_pct": 2.06,
+        "mom_share_change": 2238060,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:21:38.827492+00:00",
+        "mf_schemes": {
+          "aum_cr": 103734.0,
+          "amc_name": "UTI Mutual Fund",
+          "category": "Equity",
+          "scheme_id": 3114,
+          "created_at": "2026-08-14T07:21:38.549705+00:00",
+          "scheme_name": "Uti - Nifty Exchange Traded Fund"
+        }
+      },
+      {
+        "id": 100,
+        "scheme_id": 201,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-07-31",
+        "shares_held": 131800000,
+        "market_value_cr": 22406.0,
+        "portfolio_weight_pct": 11.45,
+        "mom_share_change": 2800000,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:16:13.762303+00:00",
+        "mf_schemes": {
+          "aum_cr": 215000.0,
+          "amc_name": "SBI Mutual Fund",
+          "category": "Index / ETF",
+          "scheme_id": 201,
+          "created_at": "2026-08-14T07:16:13.762303+00:00",
+          "scheme_name": "SBI Nifty 50 ETF"
+        }
+      },
+      {
+        "id": 164,
+        "scheme_id": 3117,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 127569333,
+        "market_value_cr": 19135.4,
+        "portfolio_weight_pct": 1.71,
+        "mom_share_change": -9698260,
+        "action_type": "STAKE_REDUCTION",
+        "created_at": "2026-08-14T07:21:40.558328+00:00",
+        "mf_schemes": {
+          "aum_cr": 86109.3,
+          "amc_name": "ICICI Prudential MF",
+          "category": "Equity",
+          "scheme_id": 3117,
+          "created_at": "2026-08-14T07:21:40.283608+00:00",
+          "scheme_name": "Icici Prudential Balanced Advantage Fund"
+        }
+      },
+      {
+        "id": 165,
+        "scheme_id": 3118,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 96982666,
+        "market_value_cr": 14547.4,
+        "portfolio_weight_pct": 1.3,
+        "mom_share_change": 96982600,
+        "action_type": "FRESH_ENTRY",
+        "created_at": "2026-08-14T07:21:41.15734+00:00",
+        "mf_schemes": {
+          "aum_cr": 65463.3,
+          "amc_name": "Kotak Mahindra MF",
+          "category": "Equity",
+          "scheme_id": 3118,
+          "created_at": "2026-08-14T07:21:40.847904+00:00",
+          "scheme_name": "Kotak Equity Arbitrage Fund"
+        }
+      },
+      {
+        "id": 166,
+        "scheme_id": 3119,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 96982666,
+        "market_value_cr": 14547.4,
+        "portfolio_weight_pct": 1.3,
+        "mom_share_change": 96982600,
+        "action_type": "FRESH_ENTRY",
+        "created_at": "2026-08-14T07:21:42.355352+00:00",
+        "mf_schemes": {
+          "aum_cr": 65463.3,
+          "amc_name": "Kotak Mahindra MF",
+          "category": "Equity",
+          "scheme_id": 3119,
+          "created_at": "2026-08-14T07:21:41.530086+00:00",
+          "scheme_name": "Kotak Arbitrage Fund"
+        }
+      },
+      {
+        "id": 168,
+        "scheme_id": 3121,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 87284666,
+        "market_value_cr": 13092.7,
+        "portfolio_weight_pct": 1.17,
+        "mom_share_change": 87284339,
+        "action_type": "FRESH_ENTRY",
+        "created_at": "2026-08-14T07:21:43.475203+00:00",
+        "mf_schemes": {
+          "aum_cr": 58917.2,
+          "amc_name": "Kotak Mahindra MF",
+          "category": "Flexi Cap",
+          "scheme_id": 3121,
+          "created_at": "2026-08-14T07:21:43.192845+00:00",
+          "scheme_name": "Kotak Flexicap Fund"
+        }
+      },
+      {
+        "id": 169,
+        "scheme_id": 108,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-06-30",
+        "shares_held": 86538000,
+        "market_value_cr": 12980.7,
+        "portfolio_weight_pct": 1.16,
+        "mom_share_change": 86538319,
+        "action_type": "FRESH_ENTRY",
+        "created_at": "2026-08-14T07:21:44.056363+00:00",
+        "mf_schemes": {
+          "aum_cr": 38200.0,
+          "amc_name": "Mirae Asset MF",
+          "category": "Large Cap",
+          "scheme_id": 108,
+          "created_at": "2026-08-13T15:23:05.009683+00:00",
+          "scheme_name": "Mirae Asset Large Cap Fund"
+        }
+      },
+      {
+        "id": 101,
+        "scheme_id": 202,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-07-31",
+        "shares_held": 65400000,
+        "market_value_cr": 11118.0,
+        "portfolio_weight_pct": 11.8,
+        "mom_share_change": 1400000,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:16:13.762303+00:00",
+        "mf_schemes": {
+          "aum_cr": 128000.0,
+          "amc_name": "SBI Mutual Fund",
+          "category": "Index / ETF",
+          "scheme_id": 202,
+          "created_at": "2026-08-14T07:16:13.762303+00:00",
+          "scheme_name": "SBI S&P BSE Sensex ETF"
+        }
+      },
+      {
+        "id": 102,
+        "scheme_id": 103,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-07-31",
+        "shares_held": 34200000,
+        "market_value_cr": 5814.0,
+        "portfolio_weight_pct": 8.9,
+        "mom_share_change": 850000,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:16:13.762303+00:00",
+        "mf_schemes": {
+          "aum_cr": 36400.0,
+          "amc_name": "HDFC Mutual Fund",
+          "category": "Large Cap",
+          "scheme_id": 103,
+          "created_at": "2026-08-13T15:23:05.009683+00:00",
+          "scheme_name": "HDFC Top 100 Fund"
+        }
+      },
+      {
+        "id": 103,
+        "scheme_id": 203,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-07-31",
+        "shares_held": 28500000,
+        "market_value_cr": 4845.0,
+        "portfolio_weight_pct": 11.2,
+        "mom_share_change": 620000,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:16:13.762303+00:00",
+        "mf_schemes": {
+          "aum_cr": 59400.0,
+          "amc_name": "UTI Mutual Fund",
+          "category": "Index / ETF",
+          "scheme_id": 203,
+          "created_at": "2026-08-14T07:16:13.762303+00:00",
+          "scheme_name": "UTI Nifty 50 ETF"
+        }
+      },
+      {
+        "id": 104,
+        "scheme_id": 104,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-07-31",
+        "shares_held": 25600000,
+        "market_value_cr": 4352.0,
+        "portfolio_weight_pct": 7.8,
+        "mom_share_change": 540000,
+        "action_type": "STAKE_INCREASE",
+        "created_at": "2026-08-14T07:16:13.762303+00:00",
+        "mf_schemes": {
+          "aum_cr": 54200.0,
+          "amc_name": "ICICI Prudential MF",
+          "category": "Large Cap",
+          "scheme_id": 104,
+          "created_at": "2026-08-13T15:23:05.009683+00:00",
+          "scheme_name": "ICICI Prudential Bluechip Fund"
+        }
+      },
+      {
+        "id": 105,
+        "scheme_id": 102,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-07-31",
+        "shares_held": 22100000,
+        "market_value_cr": 3757.0,
+        "portfolio_weight_pct": 7.4,
+        "mom_share_change": -420000,
+        "action_type": "STAKE_REDUCTION",
+        "created_at": "2026-08-14T07:16:13.762303+00:00",
+        "mf_schemes": {
+          "aum_cr": 48200.0,
+          "amc_name": "SBI Mutual Fund",
+          "category": "Large Cap",
+          "scheme_id": 102,
+          "created_at": "2026-08-13T15:23:05.009683+00:00",
+          "scheme_name": "SBI Bluechip Fund"
+        }
+      },
+      {
+        "id": 106,
+        "scheme_id": 101,
+        "symbol": "HDFCBANK.NS",
+        "as_of_date": "2026-07-31",
+        "shares_held": 18400000,
+        "market_value_cr": 3128.0,
+        "portfolio_weight_pct": 5.6,
+        "mom_share_change": 18400000,
+        "action_type": "FRESH_ENTRY",
+        "created_at": "2026-08-14T07:16:13.762303+00:00",
+        "mf_schemes": {
+          "aum_cr": 68500.0,
+          "amc_name": "PPFAS Mutual Fund",
+          "category": "Flexi Cap",
+          "scheme_id": 101,
+          "created_at": "2026-08-13T15:23:05.009683+00:00",
+          "scheme_name": "Parag Parikh Flexi Cap Fund"
+        }
+      }
+    ],
+    "financials": [
+      {
+        "id": "7c6481e0-48bf-48a1-b554-3e622dd7f615",
+        "symbol": "HDFCBANK.NS",
+        "period": "FY25 (TTM)",
+        "revenue_cr": 320000,
+        "ebitda_cr": 110000,
+        "pat_cr": 64000,
+        "cfo_cr": 72000,
+        "cfo_pat_ratio": 1.13,
+        "revenue_growth_yoy": 24.5,
+        "updated_at": "2026-08-14T06:42:18.880188+00:00"
+      },
+      {
+        "id": "db4821e4-743e-4d3c-a788-8a873bcd1aee",
+        "symbol": "HDFCBANK.NS",
+        "period": "FY24",
+        "revenue_cr": 257000,
+        "ebitda_cr": 89000,
+        "pat_cr": 60800,
+        "cfo_cr": 68000,
+        "cfo_pat_ratio": 1.12,
+        "revenue_growth_yoy": 19.8,
+        "updated_at": "2026-08-14T06:42:18.880188+00:00"
+      }
+    ],
+    "predictions": [
+      {
+        "id": "032db1ea-b308-47f8-84eb-6c8948714596",
+        "symbol": "HDFCBANK.NS",
+        "current_price": 1740.0,
+        "trajectory_score": 81.0,
+        "stance": "STRONG ACCUMULATION",
+        "target_bear": 1520.0,
+        "target_base": 2050.0,
+        "target_bull": 2350.0,
+        "signal_scores": {
+          "Macro & Themes": 0.78,
+          "Order Book / TAM": 0.8,
+          "Concall Credibility": 0.82,
+          "Smart Money (MF/SAST)": 0.86,
+          "Quantitative Fundamentals": 0.88
+        },
+        "updated_at": "2026-08-14T06:42:18.880188+00:00"
+      }
+    ]
+  },
+  "live_exchange_screener": {
+    "shareholding": {
+      "FIIs\u00a0+": {
+        "Dec 2023": "52.13%",
+        "Mar 2024": "52.31%",
+        "Jun 2024": "47.83%",
+        "Sep 2024": "47.17%",
+        "Dec 2024": "48.02%",
+        "Mar 2025": "49.21%",
+        "Jun 2025": "48.30%",
+        "Sep 2025": "48.84%",
+        "Dec 2025": "48.38%",
+        "Mar 2026": "47.67%",
+        "Jun 2026": "44.05%"
+      },
+      "DIIs\u00a0+": {
+        "Dec 2023": "30.39%",
+        "Mar 2024": "30.54%",
+        "Jun 2024": "33.33%",
+        "Sep 2024": "35.20%",
+        "Dec 2024": "35.05%",
+        "Mar 2025": "34.37%",
+        "Jun 2025": "35.68%",
+        "Sep 2025": "35.77%",
+        "Dec 2025": "36.07%",
+        "Mar 2026": "37.00%",
+        "Jun 2026": "40.14%"
+      },
+      "Government\u00a0+": {
+        "Dec 2023": "0.17%",
+        "Mar 2024": "0.17%",
+        "Jun 2024": "0.18%",
+        "Sep 2024": "0.18%",
+        "Dec 2024": "0.18%",
+        "Mar 2025": "0.18%",
+        "Jun 2025": "0.18%",
+        "Sep 2025": "0.18%",
+        "Dec 2025": "0.18%",
+        "Mar 2026": "0.18%",
+        "Jun 2026": "0.18%"
+      },
+      "Public\u00a0+": {
+        "Dec 2023": "17.30%",
+        "Mar 2024": "16.98%",
+        "Jun 2024": "18.64%",
+        "Sep 2024": "17.44%",
+        "Dec 2024": "16.75%",
+        "Mar 2025": "16.23%",
+        "Jun 2025": "15.84%",
+        "Sep 2025": "15.19%",
+        "Dec 2025": "15.33%",
+        "Mar 2026": "15.11%",
+        "Jun 2026": "15.64%"
+      },
+      "No. of Shareholders": {
+        "Dec 2023": "30,58,659",
+        "Mar 2024": "30,18,247",
+        "Jun 2024": "41,21,815",
+        "Sep 2024": "36,64,325",
+        "Dec 2024": "39,21,910",
+        "Mar 2025": "39,24,442",
+        "Jun 2025": "38,29,146",
+        "Sep 2025": "37,25,911",
+        "Dec 2025": "37,01,272",
+        "Mar 2026": "36,50,087",
+        "Jun 2026": "42,30,425"
+      }
+    },
+    "quarterly_dii": {},
+    "metrics": {
+      "Market Cap": "\u20b9         11,20,263                    Cr.",
+      "Current Price": "\u20b9         727",
+      "High / Low": "\u20b9 1,020 / 722",
+      "Stock P/E": "14.2",
+      "Book Value": "\u20b9         390",
+      "Dividend Yield": "1.79                    %",
+      "ROCE": "7.02                    %",
+      "ROE": "13.6                    %",
+      "Face Value": "\u20b9         1.00"
+    }
+  },
+  "sqlite_local": {
+    "index_stocks": [
+      [
+        "HDFCBANK.NS",
+        "HDFC Bank Ltd.",
+        "LARGE_CAP",
+        "Nifty 50",
+        1250000.0,
+        "Financial Services",
+        "2026-08-13 14:45:36"
+      ]
+    ],
+    "mf_holdings_cache": [],
+    "concall_analyses": "no such table: concall_analyses"
+  },
+  "app_fallbacks": {
+    "flutter_fallback_market_cap_cr": 1280000.0,
+    "flutter_fallback_mf_schemes_count": 28,
+    "flutter_fallback_mf_ownership_pct": "14.5% - 18.2%",
+    "flutter_fallback_top_schemes": [
+      {
+        "scheme": "HDFC Top 100 Fund",
+        "weight": "8.40%",
+        "shares": "24,500,000",
+        "value_cr": "4,165.0",
+        "action": "STAKE_INCREASE"
+      },
+      {
+        "scheme": "SBI Bluechip Fund",
+        "weight": "7.90%",
+        "shares": "18,500,000",
+        "value_cr": "3,145.0",
+        "action": "STAKE_INCREASE"
+      },
+      {
+        "scheme": "Mirae Asset Large Cap Fund",
+        "weight": "7.45%",
+        "shares": "19,200,000",
+        "value_cr": "3,264.0",
+        "action": "STAKE_REDUCTION"
+      },
+      {
+        "scheme": "Nippon India Small Cap Fund",
+        "weight": "6.20%",
+        "shares": "15,800,000",
+        "value_cr": "2,686.0",
+        "action": "FRESH_ENTRY"
+      }
+    ]
+  }
+}
